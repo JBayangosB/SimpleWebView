@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">SimpleWebView</string>
+    <string name="base_url">https://www.google.com/</string>
 </resources>
