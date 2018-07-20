@@ -35,6 +35,7 @@ android:
 
 before_script:
   # Create and start emulator
+  - echo android list target
   - echo no | android create avd --force -n test -t android-22 --abi google_apis/armeabi-v7a
   - emulator -avd test -no-audio -no-window &
   - android-wait-for-emulator
