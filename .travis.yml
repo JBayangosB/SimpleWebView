@@ -44,4 +44,4 @@ before_script:
 script:
   - ./gradlew assembleRelease
   - ./gradlew assembleReleaseUnitTest
-  - ./gradlew connectedAndroidTest
+  # - ./gradlew connectedAndroidTest
