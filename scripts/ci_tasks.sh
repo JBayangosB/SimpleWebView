@@ -1,4 +1,4 @@
-/usr/bin/env sh
+#!/usr/bin/env sh
 
 ./gradlew assembleRelease
 ./gradlew assembleReleaseUnitTest
