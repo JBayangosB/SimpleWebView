@@ -2,4 +2,3 @@
 
 ./gradlew assembleRelease
 ./gradlew assembleReleaseUnitTest
-echo $?
