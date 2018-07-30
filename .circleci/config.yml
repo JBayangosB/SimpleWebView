@@ -26,8 +26,7 @@ jobs:
 
       - run:
           name: Setup Environment
-          commands:
-            - source ./scripts/ci_setup.sh
+          command: source ./scripts/ci_setup.sh
 
       # Download and cache dependencies
       - restore_cache:
