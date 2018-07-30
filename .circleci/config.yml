@@ -24,6 +24,11 @@ jobs:
     steps:
       - checkout
 
+      - run:
+          name: Setup Environment
+          command:
+            - source ./scripts/ci_setup.sh
+
       # Download and cache dependencies
       - restore_cache:
           keys:
