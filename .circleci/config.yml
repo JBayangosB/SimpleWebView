@@ -52,14 +52,14 @@ jobs:
       - store_artifacts:
           path: app/build/outputs/apk/debug
           destination: apks
-workflows:
-  version: 2
-  build-test-and-approval-deploy:
-    jobs:
-      - build
-      - hold:
-        type: approval
-        requires:
-          - build
-      - deploy:
-        requires: hold
+  workflows:
+    version: 2
+    build-test-and-approval-deploy:
+      jobs:
+        - build
+        - hold:
+          type: approval
+          requires:
+            - build
+        - deploy:
+          requires: hold
